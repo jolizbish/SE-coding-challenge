@@ -17,7 +17,7 @@ As the SkillsEngine engineering team we want see how you code a rails app that t
 * Users are able to remove selected skills from the list by clicking the remove (x) icon.
 
 ## Submission Tips
-* Quality is better than quickness. We'd rather you take a little more time and do things well then submit poor quality work. 
+* Quality is better than speed. We'd rather you take a little more time and do things well then submit poor quality work. 
 * Ensure that your submission accurately reflects you coding style.
 * Comment, comment, comment. The more we can can understand your thought process the better.
 * Tests are not required but highly encouraged. 
