@@ -17,13 +17,13 @@ As the SkillsEngine engineering team we want see how you code a rails app that t
 * Users are able to remove selected skills from the list by clicking the remove (x) icon.
 
 ## Submission Tips
-* Quality is better than speed. We'd rather you take a little more time and do things well then submit poor quality work. 
+* Quality is better than speed. We'd rather you take a little more time to do things well then submit poor quality work. 
 * Ensure that your submission accurately reflects you coding style.
-* Comment, comment, comment. The more we can can understand your thought process the better.
+* Comment. Comment. Comment. The more we can understand your thought process, the better.
 * Tests are not required but highly encouraged. 
 * Make sure to review the [API documentation](https://dev.skillsengine.com/docs/v2competenciesanalyzeflatten) when integrating your app with the SkillsEngine API.
 * **DO NOT COPY OTHER DEVELOPER'S CODE.** We want to see your code not our own or something from stack overflow.
 
 ## Submitting your project
-* Fork this repo and submit a pull request when you're ready.
+* Fork this repo and submit a pull request.
 * Make sure you include the public url of the project.
