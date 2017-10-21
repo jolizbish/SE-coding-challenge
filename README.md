@@ -26,8 +26,4 @@ As the SkillsEngine engineering team we want see how you code a rails app that t
 
 ## Submitting your project
 * Fork this repo and submit a pull request when you're ready.
-	* Make sure you include the public url of the project.
-
-
-
-#skillsengine
+* Make sure you include the public url of the project.
