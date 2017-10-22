@@ -18,7 +18,7 @@ As the SkillsEngine engineering team we want see how you code a rails app that t
 
 ## Submission Tips
 * Quality is better than speed. We'd rather you take a little more time to do things well then submit poor quality work. 
-* Ensure that your submission accurately reflects you coding style.
+* Ensure that your submission accurately reflects your coding style.
 * Comment. Comment. Comment. The more we can understand your thought process, the better.
 * Tests are not required but highly encouraged. 
 * Make sure to review the [API documentation](https://dev.skillsengine.com/docs/v2competenciesanalyzeflatten) when integrating your app with the SkillsEngine API.
