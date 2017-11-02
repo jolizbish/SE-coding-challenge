@@ -1,0 +1,22 @@
+{
+  "name": "coding-challenge2",
+  "version": "1.0.0",
+  "description": "Jordan Bishop's coding challenge for SkillsEngine full-stack position.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolizbish/coding-challenge2.git"
+  },
+  "author": "Jordan Bishop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolizbish/coding-challenge2/issues"
+  },
+  "homepage": "https://github.com/jolizbish/coding-challenge2#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
