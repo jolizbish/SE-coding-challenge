@@ -40,7 +40,7 @@ class App extends React.Component {
       <div>
         <h1>App is rendering</h1>
         <div class="divider-bar"></div>
-        <JobDescription />
+        <JobDescription onTextEntryHandleChange={this.onTextEntryHandleChange}/>
         <div class="divider-bar"></div>
         <ItemList id="selected-skills" selectedSkills={this.state.selectedSkills} onDeselect={this.onDeselect}/>
         <div class="divider-bar"></div>
