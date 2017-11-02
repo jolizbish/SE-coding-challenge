@@ -29,12 +29,14 @@ class App extends React.Component {
   render() {
     console.log('trying to render');
     return (
-      <div class="divider-bar"></div>
-      <JobDescription />
-      <div class="divider-bar"></div>
-      <ItemList id="selected-skills" />
-      <div class="divider-bar"></div>
-      <ItemList id="suggested-skills" />
+      <div>
+        <div class="divider-bar"></div>
+        <JobDescription />
+        <div class="divider-bar"></div>
+        <ItemList id="selected-skills" />
+        <div class="divider-bar"></div>
+        <ItemList id="suggested-skills" />
+      </div>
     );
   }
 }
