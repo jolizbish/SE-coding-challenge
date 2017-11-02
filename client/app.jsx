@@ -26,16 +26,25 @@ class App extends React.Component {
     console.log(this.state.text, "text: ");
   }
 
+  onSelect(skill) {
+    // write
+  }
+
+  onDeselect(skill) {
+    // write
+  }
+
   render() {
-    console.log('trying to render');
+    console.log('App componenent is rendering');
     return (
       <div>
+        <h1>App is rendering</h1>
         <div class="divider-bar"></div>
         <JobDescription />
         <div class="divider-bar"></div>
-        <ItemList id="selected-skills" />
+        <ItemList id="selected-skills" selectedSkills={this.state.selectedSkills} onDeselect={this.onDeselect}/>
         <div class="divider-bar"></div>
-        <ItemList id="suggested-skills" />
+        <ItemList id="suggested-skills" suggestedSkills={this.state.suggestedSkills} onSelect={this.onSelect}/>
       </div>
     );
   }
