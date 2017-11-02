@@ -1,6 +1,6 @@
 
 var ItemEntry = (props) => (
-  <div className="item-entry" }>
+  <div className="item-entry" >
 
   </div>
 );
