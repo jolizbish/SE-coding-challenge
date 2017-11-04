@@ -30,9 +30,11 @@ class App extends React.Component {
   }
 
   onTextEntryHandleChange(text) {
+    var skills =
     this.setState({
       text: text,
       suggestedSkills: text.split(', '), //temporary until I get API requests working
+      // suggestedSkills: map over the results array of skills returned from API/server
       selectedSkills: []
     })
     console.log("text: ", this.state.text);
@@ -102,4 +104,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default App;
