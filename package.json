@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jolizbish/coding-challenge2#readme",
   "dependencies": {
+    "axios": "^0.17.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",

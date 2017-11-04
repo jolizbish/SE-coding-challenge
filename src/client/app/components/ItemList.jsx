@@ -5,7 +5,7 @@ const ItemList = (props) => (
   <div className="item-list">
     <h3>{props.title}</h3>
     {props.skills.map((skill) =>
-      <ItemListEntry skill={skill} onSelect={props.onSelect} symbol={props.symbol}/>
+      <ItemListEntry skill={skill} onSelect={props.onSelect} symbol={props.symbol} key={props.skills.indexOf(skill)}/>
     )}
   </div>
 );

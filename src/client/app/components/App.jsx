@@ -76,9 +76,9 @@ class App extends React.Component {
     console.log('App componenent is rendering');
     return (
       <div>
-        <div class="divider-bar"></div>
+        <div className="divider-bar"></div>
         <JobDescription onTextEntryHandleChange={this.onTextEntryHandleChange}/>
-        <div class="divider-bar"></div>
+        <div className="divider-bar"></div>
         <ItemList
           id="selected-skills"
           title="Selected Skills"
@@ -86,7 +86,7 @@ class App extends React.Component {
           skills={this.state.selectedSkills}
           onSelect={this.deselect}
         />
-        <div class="divider-bar"></div>
+        <div className="divider-bar"></div>
         <ItemList
           id="suggested-skills"
           title="Suggested Skills"

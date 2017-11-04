@@ -1,1 +1,28 @@
+h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 
+.form-control {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.line-item {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.skill {
+  padding-left: 10px;
+}
+
+.item-list-entry {
+  height: 25px;
+}
+
+#app {
+  margin-left: 40px;
+}
