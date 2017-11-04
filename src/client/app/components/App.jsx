@@ -24,15 +24,18 @@ class App extends React.Component {
 
 
   componentDidMount() {
-    // console.log(this.props)
+    console.log('Component mounted!');
+    console.log('initial state: ', this.state);
 
   }
 
   onTextEntryHandleChange(text) {
     this.setState({
-      text: text.target.value
+      text: text,
+      suggestedSkills: text.split(', '), //temporary until I get API requests working
+      selectedSkills: []
     })
-    console.log(this.state.text, "text: ");
+    console.log("text: ", this.state.text);
   }
 
   select(skill) {
