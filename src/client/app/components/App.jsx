@@ -4,15 +4,11 @@ import { render } from 'react-dom';
 import JobDescription from './JobDescription.jsx';
 import ItemList from './ItemList.jsx';
 
-// const App = (props) => <JobDescription />;
-//
-// render(<App />, document.getElementById('app'))
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: '',
       suggestedSkills: ["react", "angular", "vue"],
       selectedSkills: ["mongodb", "mySQL", "mongoose"]
     };
@@ -30,14 +26,39 @@ class App extends React.Component {
   }
 
   onTextEntryHandleChange(text) {
-    var skills =
-    this.setState({
-      text: text,
-      suggestedSkills: text.split(', '), //temporary until I get API requests working
+    var exampleData = [
+          [
+            "Critical Thinking",
+            99
+          ],
+          [
+            "Complex Problem Solving",
+            85.27
+          ],
+          [
+            "Writing",
+            45.53
+          ],
+          [
+            "Quality Control Analysis",
+            40.47
+          ],
+          [
+            "Operation and Control",
+            38.3
+          ],
+          [
+            "Reading Comprehension",
+            33.24
+          ]
+        ];
+    var skills = exampleData.map((skill) => skill[0]);
+      this.setState({
+      suggestedSkills: skills,
       // suggestedSkills: map over the results array of skills returned from API/server
       selectedSkills: []
     })
-    console.log("text: ", this.state.text);
+    console.log("skills: ", skills);
   }
 
   select(skill) {
