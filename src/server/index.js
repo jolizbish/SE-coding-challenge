@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const axios = require('axios');
 const querystring = require('querystring');
+// const process = require('process');
 
 const app = express();
 
@@ -63,7 +64,7 @@ function testToken(token, data) {
     return analyzeText(data);
   })
   .catch(err => {
-    console.log('TEST failed');
+    console.log(process.env);
     return getNewAccessToken({
       grant_type: 'client_credentials',
       client_id: process.env.client_id,
