@@ -7,6 +7,9 @@ const querystring = require('querystring');
 
 const app = express();
 
+// process.env.PORT lets the port be set by Heroku
+const port = process.env.PORT || 3000;
+
 const tokenHeader = {
   "Content-Type": "application/x-www-form-urlencoded",
   Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJkZjI5NjJlNWFhNmNlMjk3OWY3ZjY5MGRhYzQzMTMzYmNlYzFlZTBhY2YxOWY1OGNlOTk1Mzc3ZDUwNGY1Mzk3IiwiZXhwIjoxNTA5OTIyMjM4fQ.ulrjQXB9iVcvDnnoQYzcNTjl2zd8suY_DEptjQwlwOk"
@@ -67,6 +70,6 @@ function testToken(token, data) {
 }
 
 
-app.listen(3000, function () {
-  console.log('Listening on port 3000!')
+app.listen(port, function () {
+  console.log('Listening on ' + port);
 })
