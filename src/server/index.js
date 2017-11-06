@@ -53,7 +53,7 @@ function getNewAccessToken(credentials, data) {
     }
   )
   .catch(err =>
-    console.log(err)
+    // console.log(err)
   )
 }
 
