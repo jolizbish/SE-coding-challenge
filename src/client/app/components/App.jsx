@@ -77,20 +77,20 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="divider-bar"></div>
+        <hr class="top-bar"/>
         <JobDescription onTextEntryHandleChange={this.onTextEntryHandleChange}/>
-        <div className="divider-bar"></div>
+        <hr />
         <ItemList
           id="selected-skills"
-          title="Selected Skills"
+          title="SELECTED SKILLS"
           symbol="X"
           skills={this.state.selectedSkills}
           onSelect={this.deselect}
         />
-        <div className="divider-bar"></div>
+        <hr />
         <ItemList
           id="suggested-skills"
-          title="Suggested Skills"
+          title="SUGGESTED SKILLS"
           symbol="+"
           skills={this.state.suggestedSkills}
           onSelect={this.select}

@@ -1,8 +1,13 @@
 import React from 'react';
 
 const ItemListEntry = (props) => (
-  <div className="item-list-entry" >
-      <button className="line-item" onClick={() => props.onSelect(props.skill)}>{props.symbol}</button><p className="line-item skill">{props.skill}</p>
+  <div>
+    <div className="item-list-button" onClick={() => props.onSelect(props.skill)}>
+      <div className="line-item button"><p className="button">{props.symbol}</p></div>
+    </div>
+    <div className="item-list-entry">
+      <div className="line-item skill"><p >{props.skill}</p></div>
+    </div>
   </div>
 );
 
