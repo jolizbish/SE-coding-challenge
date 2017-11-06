@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const axios = require('axios');
-const creds = require('./creds.js');
 const querystring = require('querystring');
 
 const app = express();
@@ -65,7 +64,11 @@ function testToken(token, data) {
   })
   .catch(err => {
     console.log('TEST failed');
-    return getNewAccessToken(creds.creds, data);
+    return getNewAccessToken({
+      grant_type: 'client_credentials',
+      client_id: process.env.client_id,
+      client_secret: process.env.client_secret
+    }, data);
   });
 }
 
